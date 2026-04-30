@@ -1,28 +1,76 @@
-# 🎬 CineTrack — Entertainment Analytics Dashboard
+# CineTrack
 
-Real-time entertainment analytics platform built with React + Vite, Redux Toolkit, and TMDB API.
+CineTrack is a modern movie tracking web application that enables users to discover, search, and manage their favorite movies efficiently.
 
-## Domain: Entertainment & Media | API: TMDB (The Movie Database)
+---
 
-## Features Implemented
-✅ React (Vite) + ES6+
-✅ Redux Toolkit (themeSlice + mediaSlice with async thunks)
-✅ React Router v6 (Dashboard / Discover / Watchlist / Add)
-✅ Axios API Integration (TMDB REST API)
-✅ CSS Modules styling
-✅ Lazy loading (React.lazy + Suspense)
-✅ Dark Mode Toggle (CSS variables + localStorage)
-✅ Dashboard with Charts (Bar, Area, Pie via Recharts)
-✅ Real-time Auto-Refresh every 60s (custom hook)
-✅ Search + Filter + Sort (debounced search, genre filter, sort chips)
-✅ Debounced API calls (custom useDebounce hook - 450ms)
-✅ Multi-step form with validation (3-step Add to Watchlist)
-✅ Pagination (Discover page)
-✅ CRUD Watchlist (add, edit status/rating/notes, remove, localStorage persist)
+## Features
 
-## Setup
-npm install && npm run dev
+- Search for movies by title
+- Browse popular and trending movies
+- Add and manage a personal watchlist
+- Responsive user interface for different screen sizes
+- Fast performance using Vite
 
-## API Key
-Uses TMDB API. Get your own free key at https://www.themoviedb.org/settings/api
-Replace API_KEY in src/services/tmdbApi.js
+---
+
+## Tech Stack
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- Tailwind CSS
+- Movie API (e.g., TMDB)
+
+---
+
+## Project Structure
+
+cinetrack/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+└── vite.config.js
+
+---
+
+## Installation and Setup
+
+Clone the repository:
+
+git clone https://github.com/aradhana-bit/cinetrack.git
+
+Navigate to the project directory:
+
+cd cinetrack
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm run dev
+
+---
+
+## Future Enhancements
+
+- User authentication
+- Movie ratings and reviews
+- Dark mode support
+- Backend integration for persistent data
+
+---
+
+## Author
+
+Aradhana  
+GitHub: https://github.com/aradhana-bit
