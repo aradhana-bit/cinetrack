@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --bg-primary: #f1f3f7;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-sidebar: #ffffff;
+  --bg-navbar: rgba(255,255,255,0.88);
+  --text-primary: #0b0d10;
+  --text-secondary: #52596a;
+  --text-muted: #9aa3b2;
+  --accent: #7c3aed;
+  --accent-2: #ec4899;
+  --accent-glow: rgba(124,58,237,0.15);
+  --accent-2-glow: rgba(236,72,153,0.12);
+  --border: rgba(0,0,0,0.07);
+  --shadow: 0 2px 16px rgba(0,0,0,0.07);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+  --badge-bg: #f3eeff;
+  --badge-text: #7c3aed;
+  --star: #f59e0b;
+  --scrollbar: #d1d5db;
+  --transition: 0.2s cubic-bezier(0.4,0,0.2,1);
+  --navbar-blur: blur(14px);
+}
+
+[data-theme='dark'] {
+  --bg-primary: #08090d;
+  --bg-secondary: #0f1117;
+  --bg-card: #141720;
+  --bg-sidebar: #0f1117;
+  --bg-navbar: rgba(15,17,23,0.92);
+  --text-primary: #eef0f6;
+  --text-secondary: #8892a4;
+  --text-muted: #454e5e;
+  --accent: #a78bfa;
+  --accent-2: #f472b6;
+  --accent-glow: rgba(167,139,250,0.18);
+  --accent-2-glow: rgba(244,114,182,0.14);
+  --border: rgba(255,255,255,0.06);
+  --shadow: 0 2px 20px rgba(0,0,0,0.45);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.6);
+  --badge-bg: rgba(167,139,250,0.12);
+  --badge-text: #a78bfa;
+  --star: #fbbf24;
+  --scrollbar: #1e2333;
+}
+
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background var(--transition), color var(--transition);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 99px; }
+
+h1,h2,h3,h4 { line-height: 1.2; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+img { max-width: 100%; display: block; }
+
+.syne { font-family: 'Syne', sans-serif; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+.accent { color: var(--accent); }
+.accent2 { color: var(--accent-2); }
+
+.app-layout { display: flex; min-height: 100vh; }
+.main-content { flex: 1; margin-left: 255px; padding-top: 68px; transition: margin var(--transition); }
+
+@media (max-width: 900px) { .main-content { margin-left: 0; } }
